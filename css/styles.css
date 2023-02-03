@@ -1,0 +1,366 @@
+body {
+  margin: 0 auto;
+  height: 768px;
+  width: 1366px;
+  background-image: url(../images/background.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header-menu {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 20px 80px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.header-menu-logo {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.header-menu-logo-text{
+  color: white;
+}
+
+.header-menu-logo-text:hover{
+  color: #3cb878;
+}
+
+.header-menu-items {
+  display: flex;
+}
+
+.header-icons {
+  padding: 0 20px;
+  border-right: 1px solid grey;
+}
+
+.calender-icon {
+  width: 30px;
+  height: 26px;
+  background-position: -30px;
+  display: inline-block;
+  background-image: url(../images/icons.png);
+  cursor: pointer;
+}
+
+.calender-icon:hover {
+  background-position: -1px;
+}
+
+.chat-icon {
+  width: 30px;
+  height: 26px;
+  background-position: -100px;
+  display: inline-block;
+  background-image: url(../images/icons.png);
+  cursor: pointer;
+}
+
+.chat-icon:hover {
+  background-position: -62px;
+}
+
+.compass-icon {
+  width: 30px;
+  height: 26px;
+  background-position: -160px;
+  display: inline-block;
+  background-image: url(../images/icons.png);
+  cursor: pointer;
+}
+
+.compass-icon:hover {
+  background-position: -130px;
+}
+
+.header-welcome-text{
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  padding-left: 25px;
+}
+
+.header-element-link {
+  color: #3cb878;
+}
+
+.header-element-link:hover {
+  border-bottom: 1px solid #3cb878;
+}
+
+.container {
+  margin: 0 auto;
+  width: 444px;
+}
+
+.green-block {
+  position: absolute;
+  top: 30px;
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  background-color: #3cb878;
+}
+
+main {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.form {
+  padding: 30px 60px;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+.form-header {
+  font-family: verdana;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.login {
+  color: #3cb878;
+  font-size: 14px;
+}
+
+.login:hover {
+  border-bottom: 1px solid #3cb878;
+}
+
+.login-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+.facebook-login {
+  color: white;
+  width: 157px;
+  background-color: #305db8;
+  border-radius: 3px;
+  transition: 0.6s;
+}
+
+.facebook-login:hover {
+  cursor: pointer;
+  background-color: #397bff;
+}
+
+.facebook-login:active {
+  background-color: #0055ff;
+}
+
+.facebook-login-content {
+  padding: 13px 20px;
+}
+
+.facebook-logo {
+  padding-right: 17px;
+  border-right: 1px solid;
+}
+
+.facebook-text {
+  font-family: verdana;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.google-login {
+  color: white;
+  width: 157px;
+  background-color: #df4a32;
+  transition: 0.6s;
+  border-radius: 3px;
+}
+
+.google-login:hover {
+  cursor: pointer;
+  background-color: #ff583e;
+}
+
+.google-login:active {
+  background-color: #ff2605;
+}
+
+.google-logo {
+  padding-right: 17px;
+  display: inline-block;
+  border-right: 1px solid;
+}
+
+.google-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: inline-block;
+  padding-left: 11px;
+}
+
+.google-login-content {
+  padding: 13px 20px;
+}
+
+.form-seperator {
+  padding-top: 33px;
+}
+
+h4 {
+  color: grey;
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+}
+
+h4:before {
+  content: "";
+  display: block;
+  width: 140px;
+  height: 1px;
+  background: grey;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  opacity: 0.2;
+}
+
+h4::after {
+  content: "";
+  display: block;
+  width: 140px;
+  height: 1px;
+  background: grey;
+  position: absolute;
+  right: 0;
+  opacity: 0.2;
+  top: 50%;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 93%;
+  height: 46px;
+  margin-bottom: 9px;
+  border: 1px solid rgba(139, 139, 139, 0.2);
+  border-radius: 3px;
+  padding-left: 19px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input::placeholder {
+  font-size: 14px;
+  color: #bebebe;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+  box-shadow: 0px 3px 8px 0 rgba(0, 0, 0, 0.21);
+  border: 1px solid rgba(139, 139, 139, 0.1);
+  border-radius: 3px;
+  outline: none;
+  transition: 0.5s;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  text-align: center;
+  padding-top: 2px;
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+  margin: 0;
+  border: 1px solid rgb(102, 99, 99, 0.4);
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+}
+
+input[type="checkbox"]::after {
+  font-family: "Font Awesome 6 Free";
+  content: "\f00c";
+  font-weight: 900;
+  font-size: 14px;
+  color: #3cb878;
+  display: none;
+}
+
+input[type="checkbox"]:checked::after {
+  display: block;
+}
+
+input[type="checkbox"]:hover {
+  box-shadow: 0px 3px 8px 0 rgba(0, 0, 0, 0.21);
+}
+
+a {
+  text-decoration: none;
+}
+
+.input-container {
+  margin-top: 18px;
+  margin-bottom: 28px;
+}
+
+.checkbox-holder {
+  padding-top: 22px;
+}
+
+.terms-conditions {
+  padding-left: 10px;
+}
+
+#confirm-password {
+  margin-bottom: 0px;
+}
+
+.terms-link {
+  color: #3cb878;
+}
+
+.terms-link:hover {
+  border-bottom: 1px solid #3cb878;
+  cursor: pointer;
+}
+
+.conditions-link {
+  color: #3cb878;
+}
+
+.conditions-link:hover {
+  border-bottom: 1px solid #3cb878;
+  cursor: pointer;
+}
+
+.button-create {
+  background-color: #3cb878;
+  width: 322px;
+  color: white;
+  font-size: 16px;
+  border: 0;
+  padding: 17px 0;
+  border-radius: 2px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.button-create:hover {
+  background-color: #2ad57d;
+}

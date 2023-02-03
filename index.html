@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework4</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <nav class="header-menu">
+        <div class="header-menu-logo">
+          <a href="#" class="header-menu-logo-text">journey</a>
+        </div>
+        <div class="header-menu-items">
+          <div class="header-icons">
+            <a href="#" class="calender-icon"></a>
+            <a href="#" class="chat-icon"></a>
+            <a href="#" class="compass-icon"></a>
+          </div>
+          <div class="header-welcome-text">
+            <p>Welcome, <a href="#" class="header-element-link">Log In </a>or <a href="#" class="header-element-link">Sign Up</a></p>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="green-block"></div>
+      <div class="form">
+        <div class="form-header">
+          <p>Sign Up</p>
+          <a href="#" class="login">Log in</a>
+        </div>
+        <div class="login-buttons">
+          <div class="facebook-login">
+            <div class="facebook-login-content">
+              <div class="facebook-logo fa-brands fa-facebook-f">                           
+              </div>
+              <div class="facebook-text">
+                Facebook
+              </div>
+            </div>
+          </div>
+          <div class="google-login">
+            <div class="google-login-content">
+              <div class="google-logo fa-brands fa-google-plus-g">              
+              </div>
+              <div class="google-text">
+                Google
+              </div>
+            </div>
+          </div>       
+        </div>   
+        <div class="form-seperator">
+          <h4>or</h4>
+        </div>
+        <form class="register-form">
+          <div class="input-container">
+          <input type="text" name="first_name" id="first_name" placeholder="Name" required />
+          <input type="text" name="last_name" id="last_name" placeholder="Last name" required />
+          <input type="email" name="email" id="email" placeholder="Email" required />
+          <input type="password" name="password" id="password" placeholder="Choose Password" required />
+          <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" required />
+          <div class="checkbox-holder">
+          <label>
+            <input type="checkbox" name="terms" id="terms" value="agree" required />
+            <span class="terms-conditions">Agree our <a href="#" class="terms-link">Terms</a> & <a href="#" class="conditions-link">Conditions</a></span>
+          </label>
+        </div>          
+        </div>   
+        <input type="submit" class="button-create" value="Create Account">   
+        </form>
+      </div>    
+        </div>
+      </div>
+    </div>
+    </main>
+  </body>
+</html>
